@@ -1,0 +1,16 @@
+[package]
+name = "reclone"
+version = "0.1.0"
+edition = "2021"
+
+authors = [
+  "Samir Bioud <samir@kronsy.dev>"
+]
+
+license = "MIT"
+
+
+description = "Simple utility library for creating a new scope with a set of cloned variables"
+
+
+[dependencies]
