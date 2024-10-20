@@ -1,6 +1,6 @@
 [package]
 name = "reclone"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 authors = [
@@ -12,5 +12,21 @@ license = "MIT"
 
 description = "Simple utility library for creating a new scope with a set of cloned variables"
 
+
+
+homepage = "https://github.com/KronsyC/reclone"
+documentation = "https://github.com/KronsyC/reclone"
+
+keywords = [
+  "utility",
+  "no-std",
+  "clone",
+
+]
+
+categories = [
+  "no-std",
+  "no-std::no-alloc"
+]
 
 [dependencies]

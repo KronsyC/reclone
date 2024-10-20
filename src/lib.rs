@@ -1,3 +1,5 @@
+#![no_std]
+
 
 #[macro_export]
 macro_rules! cloned {
@@ -14,17 +16,20 @@ macro_rules! cloned {
 
 #[cfg(test)]
 mod test{
+    
+    extern crate alloc;
+
     use crate::cloned;
     #[test]
     fn clone_arc(){
-        use std::sync::Arc;
+        use alloc::sync::Arc;
 
         let foo = Arc::new(10u32);
         let bar = Arc::new(20u32);
 
         cloned!(foo, bar, {
-            std::mem::drop(foo);
-            std::mem::drop(bar);
+            core::mem::drop(foo);
+            core::mem::drop(bar);
         });
 
         println!("Variables: {foo:?} {bar:?}");
