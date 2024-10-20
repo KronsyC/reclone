@@ -1,6 +1,6 @@
 [package]
 name = "reclone"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 
 authors = [
@@ -15,7 +15,7 @@ description = "Simple utility library for creating a new scope with a set of clo
 
 
 homepage = "https://github.com/KronsyC/reclone"
-documentation = "https://github.com/KronsyC/reclone"
+documentation = "https://docs.rs/reclone"
 
 keywords = [
   "utility",
